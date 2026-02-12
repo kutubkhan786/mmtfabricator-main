@@ -1,13 +1,23 @@
 import React from 'react';
+import Hero from '../components/home/Hero';
+import Services from '../components/home/Services';
+import Stats from '../components/home/Stats';
+import FeaturedProjects from '../components/home/FeaturedProjects';
+import Clients from '../components/home/Clients';
+import Awards from '../components/home/Awards';
+import './HomePage.css';
 
-const ProjectsPage = () => {
+const HomePage = () => {
     return (
-        <div className="container section">
-            <h1>Our Projects</h1>
-            <p>200+ projects completed in last 15+ years.</p>
-            <p>30+ ongoing projects.</p>
-        </div>
+        <>
+            <Hero />
+            <Services />
+            <Stats />
+            <FeaturedProjects />
+            <Clients />
+            <Awards />
+        </>
     );
 };
 
-export default ProjectsPage;
+export default HomePage;

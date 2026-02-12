@@ -1,0 +1,115 @@
+.stats {
+    padding: 6rem 0;
+    background: white;
+}
+
+.stats-header {
+    max-width: 600px;
+    margin-bottom: 4rem;
+}
+
+.stats-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #666;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.stats-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: black;
+}
+
+.stats-title-highlight {
+    color: #666;
+    position: relative;
+    display: inline-block;
+}
+
+.stats-title-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+    opacity: 0.1;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.stat-card {
+    padding: 2rem;
+    border: 1px solid #eee;
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    border-color: black;
+    background: #fafafa;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: black;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.stat-content {
+    border-top: 2px solid #eee;
+    padding-top: 1rem;
+}
+
+.stat-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: black;
+}
+
+.stat-sublabel {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        padding: 4rem 0;
+    }
+
+    .stats-title {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}

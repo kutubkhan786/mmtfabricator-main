@@ -1,0 +1,26 @@
+/* HomePage specific styles if needed */
+/* Currently empty as all styles are component-specific */
+
+/* This file serves as a placeholder for any future 
+   page-specific styles that don't belong in individual components */
+
+.home-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background: black;
+    color: white;
+}
+
+::-moz-selection {
+    background: black;
+    color: white;
+}
