@@ -18,8 +18,16 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="nav-container container">
-                <Link to="/" className="nav-logo">
-                    MMT FABRICATORS
+                <Link to="/" className="nav-logo" style={{ display: "flex", flexDirection: "column", gap:"0" }}>
+                    <svg width="48" height="48" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="400" fill="none" />
+                        <g fill="none" stroke="black" strokeWidth="12" strokeLinecap="square" strokeLinejoin="miter">
+                            <line x1="200" y1="60" x2="200" y2="340" />
+                            <path d="M 80,340 V 130 L 200,250 L 320,130 V 340" />
+                            <path d="M 140,340 V 100 L 200,160 L 260,100 V 340" />
+                        </g>
+                    </svg>
+                    <span className="logo-text">MMT FABRICATORS</span>
                 </Link>
 
                 <div className="nav-menu-container">
