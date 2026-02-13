@@ -14,16 +14,27 @@
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
+    /* 'start' is fine, but 'flex-start' is standard */
     padding-top: 3rem;
     align-items: center;
     position: relative;
-    min-height: 100vh;
-    background: radial-gradient(circle at 20% 30%, #1a0c0f 0%, var(--black) 40%),
-        linear-gradient(135deg, var(--black) 0%, var(--black-soft) 100%);
+    min-height: 120vh;
+    width: 100%;
+
+    /* Corrected Image Path & Gradient */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/public/assets/images/herobg.png');
+
+    /* Key Background Properties */
+    background-size: cover;
+    /* Fills the screen, cropping edges to fit */
+    background-position: center;
+    /* Keeps the center of the Mumbai skyline visible */
+    background-repeat: no-repeat;
+    /* Prevents the image from tiling */
+
     color: var(--white);
-    display: flex;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -235,71 +246,6 @@
     gap: 3rem;
 }
 
-.hero-stats-mini {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    background: var(--glass);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    transition: 0.4s ease;
-}
-
-.hero-stats-mini:hover {
-    border-color: rgba(225, 6, 0, 0.5);
-    box-shadow: 0 0 40px rgba(225, 6, 0, 0.15);
-}
-
-.hero-stat-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--red);
-}
-
-.hero-stat-label {
-    font-size: 0.75rem;
-    color: var(--gray-light);
-    text-transform: uppercase;
-    margin-top: 0.3rem;
-}
-
-.hero-stat-divider {
-    width: 1px;
-    height: 40px;
-    background: var(--border);
-}
-
-.hero-clients {
-    padding: 2rem;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-}
-
-.hero-clients-label {
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    color: var(--gray-light);
-    margin-bottom: 1rem;
-}
-
-.hero-clients-logos {
-    display: flex;
-    gap: 2rem;
-    font-weight: 600;
-}
-
-.hero-clients-logos span {
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.hero-clients-logos span:hover {
-    color: var(--red);
-    transform: translateY(-2px);
-}
-
 /* Scroll Indicator */
 .hero-scroll {
     position: absolute;
@@ -349,8 +295,10 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .hero {
+        max-height: max-content;
         padding-top: 2.5rem;
         min-height: auto;
+        padding: 1rem;
     }
 
     .hero-content {
@@ -363,16 +311,21 @@
         text-align: center;
     }
 
+
     .hero-title {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        font-size: 2.8rem;
+        font-size: 2rem;
         gap: 1rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
-        max-width: 600px;
+        font-size: 1.3rem;
+        color: var(--gray-light);
+        margin: 2rem 0;
+        line-height: 1.6;
     }
 
     .hero-cta {
@@ -385,17 +338,6 @@
         gap: 2rem;
     }
 
-    .hero-stats-mini {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .hero-clients-logos {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     .hero-scroll {
         bottom: 1.5rem;
     }
@@ -405,7 +347,9 @@
 @media (max-width: 768px) {
 
     .hero {
-        padding-top: 2rem;
+        min-height: max-content;
+        height: 10vh;
+        padding: 2rem;
     }
 
     .hero-content {
@@ -418,9 +362,61 @@
         justify-content: center;
         align-items: center;
         font-size: 2.4rem;
+        gap: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        color: var(--gray-light);
+        margin: 2rem 0;
+        line-height: 1.6;
     }
 
     .hero-right {
         order: -1;
     }
+}
+
+@media (max-width: 368px) {
+
+    .hero {
+        min-height: max-content;
+        height: 10vh;
+        padding: 2rem;
+    }
+
+    .hero-content {
+        gap: 1.5rem;
+    }
+
+    .hero-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        gap: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        color: var(--gray-light);
+        margin: 2rem 0;
+        line-height: 1.6;
+    }
+
+    .hero-right {
+        order: -1;
+    }
+
+    .hero-btn {
+        padding: 0.6rem 1.2rem;
+        font-weight: 600;
+        font-size: 0.6rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-radius: 4px;
+        transition: all 0.4s ease;
+    }
+
 }
