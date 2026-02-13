@@ -1,11 +1,15 @@
 import React from 'react';
+import Stats from '../components/home/Stats';
+import Clients from '../components/home/Clients';
+import Awards from '../components/home/Awards';
 
 const PartnersPage = () => {
-    return (
-        <div className="container section">
-            <h1>Brand Partners</h1>
-            <p>Jindal · Hindalco · Saint Gobain · Asahi · Dorma · Giesse · Jotun · Asian Paints</p>
-        </div>
+   return (
+        <>
+            <Clients />
+            <Stats />
+            <Awards />
+        </>
     );
 };
 

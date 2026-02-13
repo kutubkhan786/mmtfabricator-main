@@ -19,7 +19,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="nav-container container">
                 <Link to="/" className="nav-logo" style={{ display: "flex", flexDirection: "column", gap:"0" }}>
-                    <svg width="48" height="48" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="48" height="48" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
                         <rect width="400" height="400" fill="none" />
                         <g fill="none" stroke="black" strokeWidth="12" strokeLinecap="square" strokeLinejoin="miter">
                             <line x1="200" y1="60" x2="200" y2="340" />
