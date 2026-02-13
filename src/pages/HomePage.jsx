@@ -6,11 +6,13 @@ import FeaturedProjects from '../components/home/FeaturedProjects';
 import Clients from '../components/home/Clients';
 import Awards from '../components/home/Awards';
 import './HomePage.css';
+import About from '../components/home/About';
 
 const HomePage = () => {
     return (
         <>
             <Hero />
+            <About />
             <Services />
             <Stats />
             <FeaturedProjects />

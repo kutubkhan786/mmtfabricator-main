@@ -6,29 +6,23 @@ const Stats = () => {
         { number: '200+', label: 'Projects Completed', sublabel: 'In last 15+ years' },
         { number: '30+', label: 'Ongoing Projects', sublabel: 'Currently in execution' },
         { number: '20k', label: 'Sq.ft Facility', sublabel: 'Ground + 1 floor' },
-        { number: '40+', label: 'Workforce', sublabel: 'Skilled laborers' },
         { number: '12+', label: 'Awards', sublabel: 'Industry recognition' },
-        { number: '6+', label: 'Premium Brands', sublabel: 'Trusted partnerships' },
     ];
 
     return (
         <section className="stats">
-            <div className="container">
-                <div className="stats-header">
-                    <span className="stats-label">Track Record</span>
-                    <h2 className="stats-title">Proven excellence in <span className="stats-title-highlight">every project</span></h2>
-                </div>
-                <div className="stats-grid">
-                    {stats.map((stat, index) => (
-                        <div key={index} className="stat-card">
-                            <div className="stat-number">{stat.number}</div>
-                            <div className="stat-content">
-                                <h3 className="stat-heading">{stat.label}</h3>
-                                <p className="stat-sublabel">{stat.sublabel}</p>
-                            </div>
+            {/* Stats Strip */}
+            <div className="stats">
+                {stats.map((stat, index) => (
+                    <React.Fragment key={index}>
+                        <div className="stat-item">
+                            <span className="stat-value">{stat.number}</span>
+                            <span className="stat-label">{stat.label}</span>
+                            {stat.sublabel && <span className="stat-sublabel">{stat.sublabel}</span>}
                         </div>
-                    ))}
-                </div>
+                        {index < stats.length - 1 && <div className="stat-divider"></div>}
+                    </React.Fragment>
+                ))}
             </div>
         </section>
     );
