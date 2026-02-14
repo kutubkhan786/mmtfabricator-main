@@ -1,8 +1,13 @@
+/* ===============================
+   CLIENTS SECTION
+================================= */
+
 .clients {
     padding: 6rem 0;
-    background: #fafafa;
-    border-top: 1px solid #eee;
+    /* border-top: 1px solid #eee; */
     border-bottom: 1px solid #eee;
+    overflow: hidden;
+    position: relative;
 }
 
 .clients-header {
@@ -11,10 +16,10 @@
 }
 
 .clients-label {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #666;
+    letter-spacing: 0.25em;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     display: block;
 }
@@ -23,38 +28,127 @@
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.02em;
-    color: black;
+    color: #ffffff;
 }
 
-.clients-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
-    align-items: center;
+
+/* ===============================
+   MARQUEE WRAPPER
+================================= */
+
+
+/* Luxury Fade Edges */
+.marquee::before,
+.marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
 }
+
+.marquee::before {
+    left: 0;
+    background: linear-gradient(to right, var(--black) 20%, transparent);
+}
+
+.marquee::after {
+    right: 0;
+    background: linear-gradient(to left, var(--black) 20%, transparent);
+}
+
+
+/* ===============================
+   MARQUEE TRACK
+================================= */
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+/* Pause animation on hover */
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+
+/* ===============================
+   CLIENT ITEM (CARD STYLE)
+================================= */
 
 .client-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #444;
-    text-align: center;
-    transition: all 0.2s;
-    border: 1px solid transparent;
+    height: 90px;
+    /* Uniform height */
+    min-width: 180px;
+    /* Prevent collapsing */
+    padding: 1.5rem 2rem;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    transition: all 0.35s ease;
 }
 
+/* Hover Lift */
 .client-item:hover {
-    color: black;
-    border-color: #ddd;
-    background: white;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
+
+
+/* ===============================
+   LOGO NORMALIZATION
+================================= */
+
+.client-logo {
+    max-height: max-content;
+    /* Controls logo visual size */
+    max-width: 180px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: all 0.35s ease;
+}
+
+/* Logo Hover Effect */
+.client-item:hover .client-logo {
+    opacity: 1;
+    transform: scale(0.97);
+}
+
+
+/* ===============================
+   SCROLL ANIMATION
+================================= */
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
 
 @media (max-width: 1024px) {
-    .clients-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .marquee-track {
+        gap: 3rem;
+        animation-duration: 22s;
     }
 }
 
@@ -63,13 +157,24 @@
         padding: 4rem 0;
     }
 
-    .clients-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+    .clients-title {
+        font-size: 1.6rem;
+    }
+
+    .marquee-track {
+        gap: 2rem;
+        animation-duration: 18s;
     }
 
     .client-item {
-        font-size: 0.95rem;
-        padding: 0.75rem;
+        height: 70px;
+        min-width: 140px;
+        padding: 1rem 1.5rem;
+        border-radius: 16px;
+    }
+
+    .client-logo {
+        max-height: 30px;
+        max-width: 110px;
     }
 }
