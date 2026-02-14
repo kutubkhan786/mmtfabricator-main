@@ -44,10 +44,10 @@ const Hero = () => {
                         <span>WE INSTALL</span>
                     </h1>
                 </div>
-                <p className="hero-subtitle">
+                <div className="hero-subtitle">
                     <div><b>Aluminum | Glass | Stainless Steel</b></div>
                     <div>Complete architectural solutions</div>
-                </p>
+                </div>
                 <div className="hero-cta">
                     <Link to="/contact" className="hero-btn hero-btn-primary">
                         Start Project

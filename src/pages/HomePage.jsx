@@ -7,6 +7,7 @@ import Clients from '../components/home/Clients';
 // import Awards from '../components/home/Awards';
 import './HomePage.css';
 import About from '../components/home/About';
+import ContactForm from '../components/contact/ContactForm';
 
 const HomePage = () => {
     return (
@@ -18,6 +19,7 @@ const HomePage = () => {
             {/* <Services /> */}
             <Clients />
             {/* <Awards /> */}
+            <ContactForm />
         </>
     );
 };
