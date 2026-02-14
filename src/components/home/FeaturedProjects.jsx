@@ -117,7 +117,7 @@ const FeaturedProjects = () => {
 
                 <div className="featured-cta">
                     <Link to="/projects" className="featured-cta-btn">
-                        Explore Complete Portfolio
+                        Explore Complete Portfolio <div style={{fontSize:"26px"}}>→</div>
                     </Link>
                 </div>
 
