@@ -1,11 +1,10 @@
 import React from 'react';
-import FeaturedProjects from '../components/home/FeaturedProjects';
 import Clients from '../components/home/Clients';
-
+import ProjectsCards from '../components/projects/ProjectsCards';
 const ProjectsPage = () => {
     return (
         <>
-            <FeaturedProjects />
+        <ProjectsCards/>
             <Clients />
         </>
     );

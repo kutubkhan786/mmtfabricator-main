@@ -3,107 +3,124 @@ import { Link } from 'react-router-dom';
 import './FeaturedProjects.css';
 
 const FeaturedProjects = () => {
+
     const projects = [
+
+        // ========================
+        // COMPLETED PROJECTS
+        // ========================
+
         {
             id: 1,
-            name: 'Lodha The Park',
-            location: 'Worli, Mumbai',
-            client: 'Lodha Developers',
-            tower: 'Tower 2',
-            category: 'Aluminum Windows & Glazing'
+            name: "Lodha The Park",
+            subtitle: "Tower 2 · Worli, Mumbai",
+            description: "Premium aluminum windows and facade glazing works executed with high-rise installation precision.",
+            status: "Completed"
         },
-        {
-            id: 2,
-            name: 'Godrej Emerald',
-            location: 'Thane, Mumbai',
-            client: 'Godrej Properties',
-            tower: 'Tower 3, 4, 5, 6, 7',
-            category: 'Glass Railings & Canopy'
-        },
-        {
-            id: 3,
-            name: 'Lodha Bel Air',
-            location: 'Wadala, Mumbai',
-            client: 'Lodha Developers',
-            tower: 'Tower A, B, C',
-            category: 'Facade Glazing'
-        },
+
         {
             id: 4,
-            name: 'Tata Boisar Project',
-            location: 'Boisar, Maharashtra',
-            client: 'Tata Realty',
-            tower: '15 Towers',
-            category: 'Complete Aluminum Solutions'
+            name: "Godrej Emerald",
+            subtitle: "Towers 3, 4, 5, 6, 7 · Thane",
+            description: "Glass railings, canopy structures, and exterior aluminum fabrication.",
+            status: "Completed"
+        },
+
+        {
+            id: 7,
+            name: "Tata La Montana",
+            subtitle: "Phase 1, 2 & 3",
+            description: "Complete aluminum and facade solutions delivered across all project phases.",
+            status: "Completed"
         },
         {
-            id: 5,
-            name: 'Mahindra Happinest',
-            location: 'Kalyan, Mumbai',
-            client: 'Mahindra Lifespace',
-            tower: 'Tower 1, 2, 3, 4, 5, 7',
-            category: 'Windows & Railings'
+            id: 9,
+            name: "Mahindra Happinest",
+            subtitle: "Towers 1, 2, 3, 4, 5, 7 · Kalyan",
+            description: "Windows, railings, and structural aluminum solutions for mass housing development.",
+            status: "Completed"
         },
         {
-            id: 6,
-            name: 'Godrej Urban Park',
-            location: 'Thane, Mumbai',
-            client: 'Godrej Properties',
-            tower: 'Tower 1, 2, 3, 7, 8, 9',
-            category: 'Spider Glazing'
-        }
+            id: 10,
+            name: "Kalpataru Radiance",
+            subtitle: "Premium Residential Development",
+            description: "High-quality facade glazing and architectural aluminum installations.",
+            status: "Completed"
+        },
+        {
+            id: 15,
+            name: "Godrej Riviera",
+            subtitle: "Residential Development",
+            description: "Facade glazing and structural aluminum systems underway.",
+            status: "Ongoing"
+        },
+
     ];
+
 
     return (
         <section className="featured-projects">
             <div className="container">
+
                 <div className="featured-header">
-                    <div className="featured-header-left">
-                        <span className="featured-label">Portfolio</span>
-                        <h2 className="featured-title">Featured <span className="featured-title-highlight">projects</span></h2>
-                    </div>
-                    <div className="featured-header-right">
+                    <div className="featured-header-center">
+                        <h2 className="featured-title">
+                            Featured <span className="featured-title-highlight">Projects</span>
+                        </h2>
+                        <span className="featured-line">....................................................</span>
                         <p className="featured-stats">
                             <strong>200+</strong> projects completed · <strong>15+</strong> years · <strong>30+</strong> ongoing
                         </p>
-                        <Link to="/projects" className="featured-view-all">
-                            View all projects →
-                        </Link>
                     </div>
+
+
                 </div>
+
 
                 <div className="projects-grid">
                     {projects.map((project) => (
                         <div key={project.id} className="project-card">
-                            <div className="project-placeholder">
-                                <div className="project-svg">
-                                    <svg width="60" height="60" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                                        <g fill="none" stroke="black" strokeWidth="12" strokeLinecap="square" strokeLinejoin="miter" opacity="0.2">
-                                            <line x1="200" y1="60" x2="200" y2="340" />
-                                            <path d="M 80,340 V 130 L 200,250 L 320,130 V 340" />
-                                            <path d="M 140,340 V 100 L 200,160 L 260,100 V 340" />
-                                        </g>
-                                    </svg>
+
+                            <div className="project-image">
+                                <img
+                                    src="/assets/images/projects/lodhatowers.jpg"
+                                    alt={project.name}
+                                />
+
+                                <div className="project-overlay">
+                                    <div className="project-info">
+
+                                        <span className={`project-status ${project.status.toLowerCase()}`}>
+                                            {project.status}
+                                        </span>
+
+                                        <h3 className="project-title">
+                                            {project.name}
+                                        </h3>
+
+                                        <p className="project-subtitle">
+                                            {project.subtitle}
+                                        </p>
+
+                                        <p className="project-description">
+                                            {project.description}
+                                        </p>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div className="project-content">
-                                <div className="project-category">{project.category}</div>
-                                <h3 className="project-name">{project.name}</h3>
-                                <p className="project-location">{project.location}</p>
-                                <div className="project-meta">
-                                    <span className="project-client">{project.client}</span>
-                                    <span className="project-tower">{project.tower}</span>
-                                </div>
-                            </div>
+
                         </div>
                     ))}
                 </div>
 
+
                 <div className="featured-cta">
                     <Link to="/projects" className="featured-cta-btn">
-                        Explore complete portfolio
+                        Explore Complete Portfolio
                     </Link>
                 </div>
+
             </div>
         </section>
     );

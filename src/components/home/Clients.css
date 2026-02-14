@@ -115,7 +115,7 @@
     width: auto;
     height: auto;
     object-fit: contain;
-    opacity: 0.8;
+    /* opacity: ; */
     transition: all 0.35s ease;
 }
 
@@ -169,12 +169,11 @@
     .client-item {
         height: 70px;
         min-width: 140px;
-        padding: 1rem 1.5rem;
+        padding: 0rem 1.5rem;
         border-radius: 16px;
     }
 
     .client-logo {
-        max-height: 30px;
-        max-width: 110px;
+        max-width: 140px;
     }
 }

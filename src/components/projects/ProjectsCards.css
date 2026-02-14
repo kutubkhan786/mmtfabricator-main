@@ -1,0 +1,123 @@
+/* ============================= */
+/* SECTION */
+/* ============================= */
+
+.projects-section {
+    padding: 6rem 0;
+    background: --var(--black);
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+
+.projects-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.projects-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.projects-title-highlight {
+    color: #ffffff;
+    position: relative;
+}
+
+.projects-title-highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #aaa, #ffffff);
+    opacity: 0.3;
+}
+
+.projects-header-right {
+    text-align: right;
+}
+
+.projects-stats {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.projects-stats strong {
+    color: #ffffff;
+}
+
+.projects-view-all {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+    border-bottom: 1px solid #111;
+    padding-bottom: 3px;
+    transition: opacity 0.3s ease;
+}
+
+.projects-view-all:hover {
+    opacity: 0.6;
+}
+
+/* ============================= */
+/* BLOCK SPACING */
+/* ============================= */
+
+.projects-block {
+    margin-bottom: 5rem;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .projects-header-right {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 4rem 0;
+    }
+
+    .projects-title {
+        font-size: 2rem;
+    }
+
+    .projects-block {
+        margin-bottom: 3rem;
+    }
+}
