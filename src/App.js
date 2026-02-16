@@ -8,11 +8,13 @@ import PartnersPage from './pages/PartnersPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
+import ScrollToTop from './components/common/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <Layout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
