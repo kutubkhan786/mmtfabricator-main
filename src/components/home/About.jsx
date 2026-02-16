@@ -8,7 +8,7 @@ const About = () => {
 
             {/* Header */}
             <div className="about-header">
-                <div className="logo-wrapper">
+                {/* <div className="logo-wrapper">
                     <svg width="90" height="90" viewBox="0 0 400 300">
                         <g
                             fill="none"
@@ -24,10 +24,10 @@ const About = () => {
                     </svg>
                 </div>
 
-                <h1 className="about-title">MMT FABRICATORS</h1>
+                <h1 className="about-title">MMT FABRICATORS</h1> */}
 
                 <div className="about-subtitle">
-                    Our Commitment to Innovation & Excellence
+                    <span>Our Commitment to Innovation & Excellence</span>
                 </div>
             </div>
 

@@ -1,139 +1,181 @@
-.services {
-    padding: 6rem 0;
-    background: white;
-    border-bottom: 1px solid #eee;
+:root {
+    --black: #0d0d0d;
+    --maroon: #6e0f1a;
+    --maroon-light: #a51c30;
+    --white: #ffffff;
+    --gray-soft: #cfcfcf;
 }
 
+/* ================= SERVICES SECTION ================= */
+
+.services {
+    padding: 7rem 0;
+    background: var(--black);
+}
+
+/* ================= HEADER ================= */
+
 .services-header {
-    max-width: 700px;
-    margin-bottom: 4rem;
+    text-align: center;
+    margin-bottom: 5rem;
 }
 
 .services-label {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #666;
+    letter-spacing: 0.3em;
+    color: var(--maroon-light);
     margin-bottom: 1rem;
     display: block;
 }
 
 .services-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: black;
-    margin-bottom: 1.5rem;
+    color: var(--white);
+    /* FIXED for dark bg */
 }
 
-.services-title-highlight {
-    color: #666;
-    position: relative;
-    display: inline-block;
+.services-title span {
+    color: var(--maroon-light);
 }
 
-.services-title-highlight::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    opacity: 0.1;
-}
-
-.services-subtitle {
-    font-size: 1.25rem;
-    color: #444;
-    line-height: 1.6;
-}
+/* ================= GRID ================= */
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-bottom: 4rem;
+    perspective: 1200px;
 }
 
+/* ================= CARD ================= */
+
 .service-card {
-    padding: 2rem;
-    background: #fafafa;
-    border: 1px solid #eee;
-    transition: all 0.3s;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #141414;
+    /* slightly lighter than section */
+    border-radius: 14px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .service-card:hover {
-    border-color: black;
-    background: white;
-    transform: translateY(-4px);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+    transform: rotateX(10deg) rotateY(0deg) translateY(0px);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(110, 15, 26, 0.35);
 }
 
-.service-icon {
-    font-size: 2.5rem;
-    line-height: 1;
-    margin-bottom: 1.5rem;
-    color: black;
+/* ================= IMAGE ================= */
+
+.service-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease;
+    transform: translateZ(0);
 }
 
-.service-title {
-    font-size: 1.25rem;
+.service-card:hover .service-image {
+    transform: scale(1) translateZ(40px);
+}
+
+/* ================= DARK BASE GRADIENT ================= */
+
+.service-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.95) 10%,
+            rgba(0, 0, 0, 0.6) 60%,
+            transparent 100%);
+    z-index: 1;
+}
+
+/* ================= LIGHT REFLECTION ================= */
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.05) 0%,
+            transparent 40%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ================= CONTENT ================= */
+
+.service-content {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 3;
+    transform: translateZ(30px);
+}
+
+.service-content h3 {
+    color: var(--white);
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: black;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.05em;
 }
 
-.service-description {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    flex: 1;
+/* ================= MAROON GLASS OVERLAY ================= */
+
+.service-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(123, 60, 68, 0.25),
+            rgba(255, 255, 255, 0.95));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    z-index: 4;
 }
+
+.service-card:hover .service-overlay {
+    transform: translateY(0);
+}
+
+.service-overlay p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+/* ================= LINK ================= */
 
 .service-link {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: black;
+    color: var(--black);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
-    align-self: flex-start;
-    transition: all 0.2s;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    width: fit-content;
+    transition: all 0.3s ease;
 }
 
 .service-link:hover {
-    border-bottom-color: black;
+    color: var(--maroon-light);
+    border-color: var(--maroon-light);
 }
 
-.services-cta {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.services-btn {
-    padding: 1rem 2.5rem;
-    background: black;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 1px solid black;
-    transition: all 0.3s;
-}
-
-.services-btn:hover {
-    background: white;
-    color: black;
-}
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1024px) {
     .services-grid {
@@ -147,19 +189,19 @@
     }
 
     .services-title {
-        font-size: 2rem;
-    }
-
-    .services-subtitle {
-        font-size: 1.1rem;
+        font-size: 2.2rem;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
     .service-card {
-        padding: 1.5rem;
+        height: 350px;
+        transform: none;
+    }
+
+    .service-card:hover {
+        transform: none;
     }
 }

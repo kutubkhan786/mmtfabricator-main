@@ -30,7 +30,7 @@ const Footer = () => {
         {/* Company Info */}
         <div className="footer-section footer-brand">
           <div className="footer-logo">
-            <div>
+            <div className='footer-logo-img'>
               <svg width="48" height="48" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" stroke="white" strokeWidth="12" strokeLinecap="square" strokeLinejoin="miter">
                   <line x1="200" y1="60" x2="200" y2="340" />
@@ -99,7 +99,6 @@ const Footer = () => {
               <span className="footer-contact-label">Email:</span>
               <div className="footer-contact-detail">
                 <a href="mailto:projects@mmtfabricators.com">projects@mmtfabricators.com</a>
-                <a href="mailto:mmtfabs@gmail.com">mmtfabs@gmail.com</a>
               </div>
             </div>
           </div>

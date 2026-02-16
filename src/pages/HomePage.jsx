@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/home/Hero';
-// import Services from '../components/home/Services';
+import Services from '../components/home/Services';
 import Stats from '../components/home/Stats';
 import FeaturedProjects from '../components/home/FeaturedProjects';
 import Clients from '../components/home/Clients';
@@ -15,11 +15,11 @@ const HomePage = () => {
             <Hero />
             <About />
             <Stats />
+            <Services />
             <FeaturedProjects />
-            {/* <Services /> */}
             <Clients />
             {/* <Awards /> */}
-            <ContactForm />
+            {/* <ContactForm /> */}
         </>
     );
 };
