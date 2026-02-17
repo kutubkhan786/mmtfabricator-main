@@ -198,12 +198,13 @@
     }
 
     .about-subtitle {
+        font-size: 0.9rem;
         flex-direction: column;
         gap: 0.5rem;
     }
 
     .about-image-main {
-        height: 280px;
+        height: 250px;
     }
 
     .about-image-secondary {
