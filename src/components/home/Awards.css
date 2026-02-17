@@ -1,83 +1,146 @@
 .awards {
-    padding: 6rem 0;
-    background: white;
+    padding: 7rem 0;
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle radial highlight */
+.awards::before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .awards-header {
-    max-width: 600px;
-    margin-bottom: 4rem;
+    max-width: 650px;
+    margin-bottom: 5rem;
 }
 
 .awards-label {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #666;
+    letter-spacing: 0.3em;
+    color: var(--gray-light);
     margin-bottom: 1rem;
     display: block;
 }
 
 .awards-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: black;
+    letter-spacing: -0.03em;
+    color: white;
 }
 
+/* GRID */
 .awards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
+/* CARD */
 .award-card {
-    display: flex;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: #fafafa;
-    border: 1px solid #eee;
-    transition: all 0.3s;
+    position: relative;
+    padding: 2.5rem;
+    background: linear-gradient(145deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.01));
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    overflow: hidden;
 }
 
+/* Gradient border hover */
 .award-card:hover {
-    border-color: black;
-    transform: translateY(-4px);
+    transform: translateY(-8px);
+    border-color: transparent;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
+.award-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    background: linear-gradient(120deg, var(--red), var(--maroon)) border-box;
+    -webkit-mask:
+        linear-gradient(#000 0 0) padding-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.award-card:hover::after {
+    opacity: 1;
+}
+
+/* Big background number */
 .award-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ddd;
-    letter-spacing: -0.03em;
-    line-height: 1;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+    letter-spacing: -0.05em;
 }
 
+/* CONTENT */
 .award-content {
-    flex: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .award-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: black;
-    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    color: white;
+    position: relative;
+}
+
+/* Animated underline */
+.award-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--red), var(--maroon));
+    transition: width 0.4s ease;
+}
+
+.award-card:hover .award-title::after {
+    width: 60%;
 }
 
 .award-issuer {
     font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 0.5rem;
+    color: var(--gray-light);
+    margin-bottom: 0.6rem;
 }
 
 .award-year {
-    font-size: 0.875rem;
-    color: #999;
+    font-size: 0.8rem;
+    color: var(--gray);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
+/* RESPONSIVE */
 @media (max-width: 1024px) {
     .awards-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -86,11 +149,11 @@
 
 @media (max-width: 768px) {
     .awards {
-        padding: 4rem 0;
+        padding: 5rem 0;
     }
 
     .awards-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .awards-grid {
@@ -98,6 +161,6 @@
     }
 
     .award-card {
-        padding: 1.5rem;
+        padding: 2rem;
     }
 }

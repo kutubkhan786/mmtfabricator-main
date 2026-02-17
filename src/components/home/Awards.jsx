@@ -6,17 +6,17 @@ const Awards = () => {
         {
             title: 'Best Safety of the Year',
             issuer: 'Lodha Developers',
-            year: '2024',
+
         },
         {
-            title: 'Best Quality Performer',
+            title: 'Best Quality Performer - 2025',
             issuer: 'Lodha Developers',
-            year: '2025',
+
         },
         {
             title: 'Customer Delight Award',
             issuer: 'Godrej Properties',
-            year: '2024',
+
         },
     ];
 
