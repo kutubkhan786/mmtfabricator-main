@@ -160,9 +160,15 @@
 }
 
 /* ================= LINK ================= */
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
 
 .service-link {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);

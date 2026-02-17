@@ -3,8 +3,11 @@ import ContactForm from '../components/contact/ContactForm';
 
 const ContactPage = () => {
     return (
-        <div className="container section">
-           <ContactForm/>
+        <div className="container " style={{
+            marginTop
+                : "5%"
+        }}>
+            {/* <ContactForm/> */}
         </div>
     );
 };

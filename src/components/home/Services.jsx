@@ -28,44 +28,12 @@ const Services = () => {
             image:
                 "https://images.unsplash.com/photo-1523419409543-a5e549c1c5a9?auto=format&fit=crop&w=1200&q=80"
         },
-        {
-            id: 4,
-            title: "Façade Glazing",
-            description:
-                "Curtain walls, structural glazing and high-performance facade systems.",
-            image:
-                "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1200&q=80"
-        },
-        {
-            id: 5,
-            title: "ACP Panel Works",
-            description:
-                "Aluminum composite cladding delivering premium exterior finishes.",
-            image:
-                "https://images.unsplash.com/photo-1505842465776-3d90f616310d?auto=format&fit=crop&w=1200&q=80"
-        },
-        {
-            id: 6,
-            title: "Spider Glazing",
-            description:
-                "Frameless point-supported glazing with stainless spider fittings.",
-            image:
-                "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1200&q=80"
-        },
-        {
-            id: 7,
-            title: "Aluminum Mesh",
-            description:
-                "Architectural mesh systems for decorative and functional applications.",
-            image:
-                "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1200&q=80"
-        }
 
     ];
 
     return (
         <section className="services">
-            <div className="container">
+            <div className="container serviceContainer">
                 <div className="services-header">
                     <span className="services-label">What We Do</span>
                     <h2 className="services-title">
@@ -89,12 +57,14 @@ const Services = () => {
 
                                 <h3>{service.title}</h3>
                                 <p>{service.description}</p>
-                                <Link to="/services" className="service-link">
-                                    Explore →
-                                </Link>
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className="about-cta" style={{ display: "flex", justifyContent: "center" }}>
+                    <Link to="/services" className="about-button">
+                        Explore Services →
+                    </Link>
                 </div>
             </div>
         </section>
