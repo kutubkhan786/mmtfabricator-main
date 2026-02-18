@@ -1,6 +1,6 @@
 .awards {
     padding: 7rem 0;
-    background: var(--black);
+    background: transparent;
     position: relative;
     overflow: hidden;
 }
@@ -36,7 +36,7 @@
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.03em;
-    color: white;
+    color: var(--black);
 }
 
 /* GRID */
@@ -53,10 +53,11 @@
     background: linear-gradient(145deg,
             rgba(255, 255, 255, 0.03),
             rgba(255, 255, 255, 0.01));
-    border: 1px solid var(--border);
+    border: 1px solid var(--black);
     backdrop-filter: blur(10px);
     transition: all 0.4s ease;
     overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Gradient border hover */
@@ -92,7 +93,7 @@
     right: 30px;
     font-size: 5rem;
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.04);
+    color: rgba(0, 0, 0, 0.04);
     pointer-events: none;
     letter-spacing: -0.05em;
 }
@@ -107,7 +108,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: white;
+    color: var(--black);
     position: relative;
 }
 

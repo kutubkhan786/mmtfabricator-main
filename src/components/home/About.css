@@ -1,6 +1,6 @@
 .about-section {
-    background: var(--black);
-    color: var(--white);
+    background: transparent;
+    color: var(--black);
     padding: 2rem 2rem 6rem 1rem;
 }
 
@@ -30,7 +30,7 @@
     letter-spacing: 0.25em;
     text-transform: uppercase;
 
-    color: var(--gray-light);
+    color: var(--black);
     position: relative;
 }
 
@@ -42,9 +42,9 @@
 
 /* Modern hover effect */
 .about-subtitle span:hover {
-    color: #ffffff;
+    color: var(--maroon);
     transform: translateY(-4px);
-    text-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Underline animation */
@@ -143,7 +143,7 @@
     font-size: 0.95rem;
     font-weight: normal;
     line-height: 1.7;
-    color: #ccc;
+    color: var(--black);
 }
 
 .about-principles {
@@ -155,7 +155,7 @@
 .principle-tag {
     font-size: 0.75rem;
     padding: 0.4rem 1rem;
-    background: rgba(225, 6, 0, 0.08);
+    background: rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(225, 6, 0, 0.2);
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -165,7 +165,7 @@
 .about-button {
     display: inline-block;
     padding: 0.9rem 2rem;
-    background: transparent;
+    background: black;
     border: 1px solid var(--red);
     color: var(--white);
     text-decoration: none;
@@ -175,7 +175,7 @@
 }
 
 .about-button:hover {
-    background: var(--red);
+    background: var(--maroon);
 }
 
 /* TABLET */

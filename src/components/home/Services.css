@@ -9,8 +9,9 @@
 /* ================= SERVICES SECTION ================= */
 
 .services {
-    padding: 7rem 0;
-    background: var(--black);
+    padding: 3rem 0;
+    background: transparent;
+    border-top:1px solid var(--red);
 }
 
 /* ================= HEADER ================= */
@@ -32,7 +33,7 @@
 .services-title {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--white);
+    color: var(--black);
     /* FIXED for dark bg */
 }
 
@@ -171,7 +172,6 @@
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     width: fit-content;
     transition: all 0.3s ease;
 }

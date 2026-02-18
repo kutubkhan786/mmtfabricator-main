@@ -3,8 +3,8 @@
 /* ============================= */
 
 .featured-projects {
-    background: --var(--black);
-    margin: 5rem 0 0 0;
+    background: transparent;
+    margin: 3rem  0;
 }
 
 .container {
@@ -32,7 +32,7 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    color: rgb(255, 201, 201);
+    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
     display: block;
 }
@@ -41,7 +41,7 @@
     font-size: 2.75rem;
     font-weight: 700;
     letter-spacing: -0.02em;
-    color: #ffffff;
+    color: #000000;
     line-height: 1.2;
 }
 
@@ -53,12 +53,12 @@
 
 .featured-stats {
     font-size: 1rem;
-    color: #cccccc;
+    color: #000000;
     margin-bottom: 0.75rem;
 }
 
 .featured-stats strong {
-    color: #ffffff;
+    color: #000000;
 }
 
 .featured-view-all {
@@ -223,20 +223,20 @@
     align-items: center;
     gap: 10px;
     padding: 0.8rem 2.5rem;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid var(--maroon);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #cacaca;
-    background: maroon;
+    color: #ffffff;
+    background: rgb(0, 0, 0);
     transition: all 0.4s ease;
 }
 
 .featured-cta-btn:hover {
-    background: rgb(255, 255, 255);
-    color: #000000;
+    background: var(--maroon);
+    color: #ffffff;
 }
 
 /* ============================= */

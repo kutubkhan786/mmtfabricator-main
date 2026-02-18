@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: #111;
-  background: var(--black);
+  background: var(--grey);
 }
 
 code {
