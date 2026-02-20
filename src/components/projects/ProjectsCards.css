@@ -28,7 +28,7 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 1rem;
     display: block;
 }
@@ -41,7 +41,7 @@
 }
 
 .projects-title-highlight {
-    color: #ffffff;
+    color: var(--maroon);
     position: relative;
 }
 
@@ -62,12 +62,12 @@
 
 .projects-stats {
     font-size: 1rem;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 0.75rem;
 }
 
 .projects-stats strong {
-    color: #ffffff;
+    color: #000000;
 }
 
 .projects-view-all {

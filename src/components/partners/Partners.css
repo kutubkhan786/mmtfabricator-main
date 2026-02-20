@@ -1,0 +1,115 @@
+:root {
+  --maroon: #6e0f1a;
+  --black: #111111;
+  --light-gray: #f8f8f8;
+  --border: #e5e5e5;
+}
+
+.partners {
+  padding: 7rem 8%;
+  background: #ffffff;
+}
+
+/* Header */
+.partners-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.partners-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  font-weight: 600;
+}
+
+.partners-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--black);
+}
+
+.partners-title span {
+  color: var(--maroon);
+}
+
+.partners-subtext {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Grid */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Cards */
+.partner-card {
+  background: var(--black);
+  padding: 2.5rem;
+  border-radius: 16px;
+  color: white;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.partner-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.partner-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.partner-card li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+/* Hover Effects */
+.partner-card:hover {
+  transform: translateY(-8px);
+  background: var(--maroon);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.partner-card:hover li {
+  opacity: 1;
+  letter-spacing: 0.5px;
+}
+
+/* Footer */
+.partners-footer {
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.partners-footer h3 {
+  color: var(--maroon);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.partners-footer a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.partners-footer a:hover {
+  color: var(--maroon);
+}
