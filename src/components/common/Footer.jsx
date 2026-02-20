@@ -134,6 +134,25 @@ const Footer = () => {
         <div className="footer-copyright">
           <p>© {currentYear} MMT Fabricators. All rights reserved.</p>
         </div>
+        <div className="footer-copyright">
+          <a
+            href="https://www.brixsmedia.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#ffffff",
+              textDecoration: "none",
+              fontWeight: "200",
+              fontSize: "12px",
+              transition: "opacity 0.3s ease",
+              cursor: "pointer"
+            }}
+            onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
+            onMouseLeave={(e) => (e.target.style.opacity = "1")}
+          >
+            Developed and Maintained by BrixsMedia
+          </a>
+        </div>
       </div>
     </footer >
   );
