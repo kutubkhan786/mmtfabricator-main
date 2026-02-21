@@ -15,7 +15,8 @@ const FeaturedProjects = () => {
             name: "Lodha The Park",
             subtitle: "Tower 2 · Worli, Mumbai",
             description: "Premium aluminum windows and facade glazing works executed with high-rise installation precision.",
-            status: "Completed"
+            status: "Completed",
+            src: "/assets/images/projects/lodha_park.jpg",
         },
 
         {
@@ -23,7 +24,8 @@ const FeaturedProjects = () => {
             name: "Godrej Emerald",
             subtitle: "Towers 3, 4, 5, 6, 7 · Thane",
             description: "Glass railings, canopy structures, and exterior aluminum fabrication.",
-            status: "Completed"
+            status: "Completed",
+            src: "/assets/images/projects/godrej_emerald.jpg",
         },
 
         {
@@ -31,28 +33,32 @@ const FeaturedProjects = () => {
             name: "Tata La Montana",
             subtitle: "Phase 1, 2 & 3",
             description: "Complete aluminum and facade solutions delivered across all project phases.",
-            status: "Completed"
+            status: "Completed",
+            src: "/assets/images/projects/tata_la_montana.jpg",
         },
         {
             id: 9,
             name: "Mahindra Happinest",
             subtitle: "Towers 1, 2, 3, 4, 5, 7 · Kalyan",
             description: "Windows, railings, and structural aluminum solutions for mass housing development.",
-            status: "Completed"
+            status: "Completed",
+            src: "/assets/images/projects/mahindra_happinest.jpg",
         },
         {
             id: 10,
             name: "Kalpataru Radiance",
             subtitle: "Premium Residential Development",
             description: "High-quality facade glazing and architectural aluminum installations.",
-            status: "Completed"
+            status: "Completed",
+            src: "/assets/images/projects/kalpataru_radiance.jpg",
         },
         {
             id: 15,
             name: "Godrej Riviera",
             subtitle: "Residential Development",
             description: "Facade glazing and structural aluminum systems underway.",
-            status: "Ongoing"
+            status: "Ongoing",
+            src: "/assets/images/projects/godrej_riveria.jpeg",
         },
 
     ];
@@ -83,7 +89,7 @@ const FeaturedProjects = () => {
 
                             <div className="project-image">
                                 <img
-                                    src="/assets/images/projects/lodhatowers.jpg"
+                                    src={project.src}
                                     alt={project.name}
                                 />
 
@@ -117,7 +123,7 @@ const FeaturedProjects = () => {
 
                 <div className="featured-cta">
                     <Link to="/projects" className="featured-cta-btn">
-                        Explore Complete Portfolio <div style={{fontSize:"26px"}}>→</div>
+                        Explore Complete Portfolio <div style={{ fontSize: "26px" }}>→</div>
                     </Link>
                 </div>
 

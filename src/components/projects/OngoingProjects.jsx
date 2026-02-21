@@ -10,6 +10,7 @@ const OngoingProjects = () => {
             name: "Lodha Palava & Premiere Sector",
             subtitle: "Palava City",
             description: "Ongoing facade glazing and aluminum structural installations.",
+            src:"/assets/images/projects/lodha_palva.jpg",
             status: "Ongoing"
         },
         {
@@ -17,6 +18,7 @@ const OngoingProjects = () => {
             name: "Lodha Belmondo",
             subtitle: "Pune Region",
             description: "Active glazing and facade work across premium residential towers.",
+            src:"/assets/images/projects/lodha_belmondo.jpg",
             status: "Ongoing"
         },
         {
@@ -24,6 +26,7 @@ const OngoingProjects = () => {
             name: "Lodha Panache",
             subtitle: "Pune Region",
             description: "Fabrication and architectural aluminum systems currently under execution.",
+            src:"/assets/images/projects/lodha_panache.jpg",
             status: "Ongoing"
         },
         {
@@ -31,6 +34,7 @@ const OngoingProjects = () => {
             name: "Godrej Exquisite",
             subtitle: "Premium High-Rise Project",
             description: "Premium glass and aluminum installations in progress.",
+            src:"/assets/images/projects/godrej_exquisite.jpg",
             status: "Ongoing"
         },
         {
@@ -38,6 +42,7 @@ const OngoingProjects = () => {
             name: "Godrej Riviera",
             subtitle: "Residential Development",
             description: "Facade glazing and structural aluminum systems underway.",
+            src:"/assets/images/projects/godrej_riveria.jpeg",
             status: "Ongoing"
         },
         {
@@ -45,6 +50,7 @@ const OngoingProjects = () => {
             name: "Mahindra Nostalgia",
             subtitle: "Residential Complex",
             description: "Ongoing fabrication and facade structural works.",
+            src:"/assets/images/projects/mahindra_nostalgia.jpg",
             status: "Ongoing"
         },
         {
@@ -52,6 +58,7 @@ const OngoingProjects = () => {
             name: "Kalpataru Vivant South Pole",
             subtitle: "Premium Residential Project",
             description: "Advanced aluminum glazing and facade installations currently in progress.",
+            src:"/assets/images/projects/kalpataru_vivant.jpg",
             status: "Ongoing"
         }
     ];
@@ -68,7 +75,7 @@ const OngoingProjects = () => {
 
                             <div className="project-image">
                                 <img
-                                    src="/assets/images/projects/lodhatowers.jpg"
+                                    src={project.src}
                                     alt={project.name}
                                 />
 
