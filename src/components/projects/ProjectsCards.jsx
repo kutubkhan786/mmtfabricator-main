@@ -1,8 +1,7 @@
 import React from 'react';
-import CompletedProjects from './CompletedProjects';
-import OngoingProjects from './OngoingProjects';
 import { Link } from 'react-router-dom';
 import './ProjectsCards.css';
+import AllProjects from './AllProjects';
 
 const ProjectsCards = () => {
     return (
@@ -12,34 +11,27 @@ const ProjectsCards = () => {
 
                 {/* ===== HEADER ===== */}
                 <div className="projects-header">
-                    <div className="projects-header-left">
+                    <div >
                         <span className="projects-label">Portfolio</span>
                         <h2 className="projects-title">
-                           <span className="projects-title-highlight">Projects</span>
+                            <span className="projects-title-highlight">Projects</span>
                         </h2>
                     </div>
 
-                    <div className="projects-header-right">
+                    {/* <div className="projects-header-right">
                         <p className="projects-stats">
                             <strong>200+</strong> projects completed ·
                             <strong> 15+</strong> years ·
                             <strong> 30+</strong> ongoing
                         </p>
-                        <Link to="/projects" className="projects-view-all">
-                            View all projects →
-                        </Link>
-                    </div>
+
+                    </div> */}
+                </div>
+                <div className="projects-block">
+                    <AllProjects />
                 </div>
 
-                {/* ===== COMPLETED ===== */}
-                <div className="projects-block">
-                    <CompletedProjects />
-                </div>
 
-                {/* ===== ONGOING ===== */}
-                <div className="projects-block">
-                    <OngoingProjects />
-                </div>
 
             </div>
 
