@@ -155,7 +155,6 @@
 }
 
 .quick-links-section h3,
-.services-section h3,
 .map-section h3 {
     text-align: center;
     color: #333;
@@ -184,35 +183,6 @@
     background-color: #f0f7ff;
 }
 
-/* Services Section */
-.services-section {
-    padding: 3rem 0;
-    background-color: #f8f9fa;
-}
-
-.services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.service-tag {
-    background-color: white;
-    color: #333;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    font-size: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.service-tag:hover {
-    background-color: #007bff;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-}
 
 /* Map Section */
 .map-section {
@@ -292,10 +262,7 @@
         font-size: 1rem;
     }
 
-    .service-tag {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
+    
 }
 
 /* Animation */
