@@ -114,7 +114,7 @@ const ContactPage = () => {
                                 {/* You can embed actual Google Maps iframe here */}
                                 <iframe
                                     title="Mumbai Office Location"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5!2d72.8!3d18.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU0JzAwLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.979322995047!2d72.84152397373356!3d18.976520555090893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce5385998185%3A0xe8188ef1a02a634e!2sBarrister%20Nath%20Pai%20Marg%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1771867909274!5m2!1sen!2sin"
                                     width="100%"
                                     height="250"
                                     style={{ border: 0 }}
@@ -129,7 +129,7 @@ const ContactPage = () => {
                                 {/* You can embed actual Google Maps iframe here */}
                                 <iframe
                                     title="Bhiwandi Factory Location"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5!2d72.8!3d18.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU0JzAwLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60312.43576774917!2d73.02188049618534!3d19.296664273891783!2m3!1f0!2f0!3m0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bd79d2b83441%3A0x86847833075b3648!2sBhiwandi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708680000000!5m2!1sen!2sin"
                                     width="100%"
                                     height="250"
                                     style={{ border: 0 }}
