@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-contact-item">
-            <span className="footer-contact-label">Factory:</span>
+            <span className="footer-contact-label" style={{marginTop:"5px"}}>Factory:</span>
             <div className="footer-contact-detail">
               <p>C12, Atlanta Mill Compound</p>
               <p>Mumbai-Nashik Highway Road</p>
