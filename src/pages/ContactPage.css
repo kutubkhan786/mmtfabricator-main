@@ -1,0 +1,323 @@
+.contact-page {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.contact-hero {
+    background:transparent;
+    color: var(--maroon);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Contact Content */
+.contact-content {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Cards */
+.company-info-card,
+.contact-card,
+.location-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.company-info-card:hover,
+.contact-card:hover,
+.location-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Company Info Card */
+.company-header h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    color: #007bff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.gst-info {
+    background-color: #f0f7ff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
+}
+
+.gst-info strong {
+    color: #007bff;
+}
+
+/* Contact Cards */
+.contact-card h3,
+.location-card h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+}
+
+.director {
+    margin-bottom: 1.5rem;
+}
+
+.director h4 {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.phone-link,
+.email-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.phone-link:hover,
+.email-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Location Cards */
+.location-card address {
+    color: #666;
+    line-height: 1.8;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+
+.map-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.map-link:hover {
+    background-color: #0056b3;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.quick-links-section h3,
+.services-section h3,
+.map-section h3 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quick-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.quick-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+    color: #007bff;
+    background-color: #f0f7ff;
+}
+
+/* Services Section */
+.services-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.service-tag {
+    background-color: white;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-tag:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Map Section */
+.map-section {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.map-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-card h4 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.map-placeholder {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-placeholder iframe {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-links-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .company-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .service-tag {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-grid > * {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact-grid > *:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contact-grid > *:nth-child(3) {
+    animation-delay: 0.4s;
+}
