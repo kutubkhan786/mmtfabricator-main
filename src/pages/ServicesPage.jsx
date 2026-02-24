@@ -9,7 +9,7 @@ const ServicePage = () => {
             description:
                 "Sliding, casement, and custom aluminum window systems engineered for durability and elegance.",
             image:
-                "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/ALwindow.jpg"
         },
         {
             id: 2,
@@ -17,7 +17,7 @@ const ServicePage = () => {
             description:
                 "Premium stainless steel and glass railing systems built with precision and safety compliance.",
             image:
-                "https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/glasandssr.jpg"
         },
         {
             id: 3,
@@ -25,7 +25,7 @@ const ServicePage = () => {
             description:
                 "Minimal structural glass canopy solutions for modern architectural aesthetics.",
             image:
-                "https://images.unsplash.com/photo-1523419409543-a5e549c1c5a9?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/GlassCanopy.jpg"
         },
         {
             id: 4,
@@ -33,7 +33,7 @@ const ServicePage = () => {
             description:
                 "Curtain walls, structural glazing and high-performance facade systems.",
             image:
-                "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/facadeglazing.jpg"
         },
         {
             id: 5,
@@ -41,7 +41,7 @@ const ServicePage = () => {
             description:
                 "Aluminum composite cladding delivering premium exterior finishes.",
             image:
-                "https://images.unsplash.com/photo-1505842465776-3d90f616310d?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/acppanel.jpg"
         },
         {
             id: 6,
@@ -49,7 +49,7 @@ const ServicePage = () => {
             description:
                 "Frameless point-supported glazing with stainless spider fittings.",
             image:
-                "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/spiderglazing.jpg"
         },
         {
             id: 7,
@@ -57,7 +57,7 @@ const ServicePage = () => {
             description:
                 "Architectural mesh systems for decorative and functional applications.",
             image:
-                "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/mesh.jpg"
         }
 
     ];

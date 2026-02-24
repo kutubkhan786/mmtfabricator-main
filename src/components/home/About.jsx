@@ -38,13 +38,13 @@ const About = () => {
                 <div className="about-image-side">
                     <div className="about-image-wrapper">
                         <img
-                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                            src="/assets/images/about/about2.jpeg"
                             alt="Glass facade building"
                             className="about-image-main"
                         />
 
                         <img
-                            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80"
+                            src="/assets/images/about/about2.jpeg"
                             alt="Aluminium facade structure"
                             className="about-image-secondary"
                         />

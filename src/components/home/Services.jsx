@@ -10,7 +10,7 @@ const Services = () => {
             description:
                 "Sliding, casement, and custom aluminum window systems engineered for durability and elegance.",
             image:
-                "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/ALwindow.jpg"
         },
         {
             id: 2,
@@ -18,7 +18,7 @@ const Services = () => {
             description:
                 "Premium stainless steel and glass railing systems built with precision and safety compliance.",
             image:
-                "https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/glasandssr.jpg"
         },
         {
             id: 3,
@@ -26,7 +26,7 @@ const Services = () => {
             description:
                 "Minimal structural glass canopy solutions for modern architectural aesthetics.",
             image:
-                "https://images.unsplash.com/photo-1523419409543-a5e549c1c5a9?auto=format&fit=crop&w=1200&q=80"
+                "/assets/images/services/GlassCanopy.jpg"
         },
 
     ];
