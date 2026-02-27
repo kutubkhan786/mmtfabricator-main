@@ -3,13 +3,16 @@ import "./Clients.css";
 
 const Clients = () => {
     const clients = [
-        { logo: "/assets/logos/birla.png" },
-        { logo: "/assets/logos/godrej.png" },
-        { logo: "/assets/logos/jpinfra.png" },
-        { logo: "/assets/logos/lodha.png" },//done
-        { logo: "/assets/logos/mahindra.png" },//done
-        { logo: "/assets/logos/rustomjee.png" },//done
-        { logo: "/assets/logos/tata.png" },
+        { logo: "/assets/images/clients/birla.png" },
+        { logo: "/assets/images/clients/godrej.png" },
+        { logo: "/assets/images/clients/jpinfra.png" },
+        { logo: "/assets/images/clients/lodha.png" },
+        { logo: "/assets/images/clients/mahindra.png" },
+        { logo: "/assets/images/clients/rustomjee.png" },
+        { logo: "/assets/images/clients/tata.png" },
+        { logo: "/assets/images/clients/piramal.png" },
+        { logo: "/assets/images/clients/adani.png" },
+        { logo: "/assets/images/clients/landt.png" },
     ];
 
     return (
