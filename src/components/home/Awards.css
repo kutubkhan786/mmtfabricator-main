@@ -49,7 +49,7 @@
 /* CARD */
 .award-card {
     position: relative;
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 3rem;
     background: linear-gradient(145deg,
             rgba(255, 255, 255, 0.03),
             rgba(255, 255, 255, 0.01));
@@ -58,6 +58,10 @@
     transition: all 0.4s ease;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /* Gradient border hover */
@@ -86,16 +90,60 @@
     opacity: 1;
 }
 
-/* Big background number */
-.award-number {
+/* IMAGE CONTAINER - BIGGER */
+.award-image-container {
+    position: relative;
+    z-index: 2;
+    width: 180px;
+    height: 180px;
+    margin: 0 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg,
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.02));
+    border-radius: 50%;
+    padding: 0;
+    /* Remove padding to allow image to fill container */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    /* Ensure image stays within circle */
+}
+
+.award-card:hover .award-image-container {
+    border-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.award-image-container::before {
+    content: "";
     position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 5rem;
-    font-weight: 800;
-    color: rgba(0, 0, 0, 0.04);
-    pointer-events: none;
-    letter-spacing: -0.05em;
+    inset: -2px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, var(--red), var(--maroon));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.award-card:hover .award-image-container::before {
+    opacity: 0.3;
+}
+
+.award-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Changed from 'fill' to 'cover' to fill the circle without distortion */
+    filter: brightness(0.9);
+    transition: filter 0.4s ease;
+}
+
+.award-card:hover .award-image {
+    filter: brightness(1.2);
 }
 
 /* CONTENT */
@@ -110,6 +158,7 @@
     margin-bottom: 0.75rem;
     color: var(--black);
     position: relative;
+    display: inline-block;
 }
 
 /* Animated underline */
@@ -125,7 +174,7 @@
 }
 
 .award-card:hover .award-title::after {
-    width: 60%;
+    width: 100%;
 }
 
 .award-issuer {
@@ -146,6 +195,13 @@
     .awards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .award-image-container {
+        width: 160px;
+        height: 160px;
+        padding: 0;
+        /* Keep padding removed on responsive sizes */
+    }
 }
 
 @media (max-width: 768px) {
@@ -162,6 +218,23 @@
     }
 
     .award-card {
-        padding: 2rem;
+        padding: 2rem 2rem 2.5rem;
+    }
+
+    .award-image-container {
+        width: 160px;
+        height: 160px;
+        padding: 0;
+        /* Keep padding removed on responsive sizes */
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .award-image-container {
+        width: 160px;
+        height: 160px;
+        padding: 0;
+        /* Keep padding removed on responsive sizes */
     }
 }

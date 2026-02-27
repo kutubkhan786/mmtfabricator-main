@@ -6,17 +6,17 @@ const Awards = () => {
         {
             title: 'Best Safety of the Year',
             issuer: 'Lodha Developers',
-
+            image: '/assets/images/awards/lodhaBS.jpeg'
         },
         {
             title: 'Best Quality Performer - 2025',
             issuer: 'Lodha Developers',
-
+            image: '/assets/images/awards/lodhaBQ.jpeg'
         },
         {
             title: 'Customer Delight Award',
             issuer: 'Godrej Properties',
-
+            image: '/assets/images/awards/godrej.jpeg'
         },
     ];
 
@@ -30,11 +30,16 @@ const Awards = () => {
                 <div className="awards-grid">
                     {awards.map((award, index) => (
                         <div key={index} className="award-card">
-                            <div className="award-number">0{index + 1}</div>
+                            <div className="award-image-container">
+                                <img
+                                    src={award.image}
+                                    alt={`${award.title} award`}
+                                    className="award-image"
+                                />
+                            </div>
                             <div className="award-content">
                                 <h3 className="award-title">{award.title}</h3>
                                 <p className="award-issuer">{award.issuer}</p>
-                                <span className="award-year">{award.year}</span>
                             </div>
                         </div>
                     ))}
