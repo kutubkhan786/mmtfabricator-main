@@ -3,86 +3,144 @@ import { Link } from "react-router-dom";
 import "./About.css";
 
 const About = () => {
+    const stats = [
+        { number: "15+", label: "Years of Excellence" },
+        { number: "200+", label: "Projects Completed" },
+        { number: "50+", label: "Happy Clients" },
+        { number: "100+", label: "Team Members" }
+    ];
+
+    const capabilities = [
+        {
+            icon: "🏗️",
+            title: "Facade Engineering",
+            description: "Advanced curtain wall, cladding, and glazing systems"
+        },
+        {
+            icon: "🔧",
+            title: "Custom Fabrication",
+            description: "Bespoke metal work and architectural elements"
+        },
+        {
+            icon: "📐",
+            title: "Design & Detailing",
+            description: "Comprehensive shop drawings and 3D modeling"
+        },
+        {
+            icon: "✅",
+            title: "Installation",
+            description: "Expert on-site installation and project management"
+        }
+    ];
+
     return (
         <section className="about-section">
 
-            {/* Header */}
-            <div className="about-header">
-                {/* <div className="logo-wrapper">
-                    <svg width="90" height="90" viewBox="0 0 400 300">
-                        <g
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="12"
-                            strokeLinecap="square"
-                            strokeLinejoin="miter"
-                        >
-                            <line x1="200" y1="60" x2="200" y2="340" />
-                            <path d="M 80,340 V 130 L 200,250 L 320,130 V 340" />
-                            <path d="M 140,340 V 100 L 200,160 L 260,100 V 340" />
-                        </g>
-                    </svg>
+
+
+
+            {/* Main Content - Split Layout with Multiple Images */}
+            <div className="about-main">
+                <div className="container">
+                    <div className="about-split">
+
+                        {/* Image Gallery Side */}
+                        <div className="about-gallery-side">
+                            <div className="gallery-grid">
+                                <div className="gallery-item main">
+                                    <img
+                                        src="/assets/images/about/about2.jpeg"
+                                        alt="Modern glass facade installation"
+                                        className="gallery-image"
+                                    />
+                                    <div className="gallery-overlay">
+                                        <span className="gallery-tag">Facade Engineering</span>
+                                    </div>
+                                </div>
+
+                                <div className="gallery-item secondary">
+                                    <img
+                                        src="/assets/images/about/about1.jpeg"
+                                        alt="Aluminium composite panel work"
+                                        className="gallery-image"
+                                    />
+                                </div>
+
+                                <div className="gallery-item tertiary">
+                                    <img
+                                        src="/assets/images/about/about2.jpeg"
+                                        alt="Structural glazing details"
+                                        className="gallery-image"
+                                    />
+                                </div>
+
+                                <div className="gallery-item quaternary">
+                                    <img
+                                        src="/assets/images/about/about1.jpeg"
+                                        alt="Metal fabrication workshop"
+                                        className="gallery-image"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Text Side */}
+                        <div className="about-text-side">
+                            <span className="about-section-label">Who We Are</span>
+                            <h2 className="about-section-title">
+                                Crafting Landmarks That <span className="highlight">Define Skylines</span>
+                            </h2>
+
+                            <p className="about-text">
+                                The facade and fenestration industry is evolving rapidly—from
+                                energy-efficient glazing systems to fire-safe cladding regulations
+                                and sustainable materials. At MMT Fabricators, we don't just adapt
+                                to change; we lead it.
+                            </p>
+
+                            <p className="about-text">
+                                With over <strong>15+ years</strong> of hands-on experience
+                                across premium residential towers, commercial developments, and
+                                luxury projects, we transform architectural visions into tangible
+                                landmarks. Our team of skilled engineers and fabricators ensures
+                                every detail meets the highest standards of quality and precision.
+                            </p>
+
+                            <div className="about-features">
+                                <div className="feature">
+                                    <div className="feature-icon">✓</div>
+                                    <div className="feature-text">ISO 9001:2015 Certified</div>
+                                </div>
+                                <div className="feature">
+                                    <div className="feature-icon">✓</div>
+                                    <div className="feature-text">Specialized in High-Rise Facades</div>
+                                </div>
+                                <div className="feature">
+                                    <div className="feature-icon">✓</div>
+                                    <div className="feature-text">Sustainable Material Sourcing</div>
+                                </div>
+                                <div className="feature">
+                                    <div className="feature-icon">✓</div>
+                                    <div className="feature-text">Advanced 3D Modeling & BIM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <h1 className="about-title">MMT FABRICATORS</h1> */}
-
-                <div className="about-subtitle">
-                    <span>Our Commitment to Innovation & Excellence</span>
+            </div>
+            <div className="about-cta-section">
+                <div className="container">
+                    <div className="cta-content">
+                        <h2 className="cta-title">Want to know more about MMT FABRICATORS?</h2>
+                        <div className="cta-buttons">
+                            <Link to="/about" className="cta-button secondary">
+                                View More About Us →
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            {/* Split Layout */}
-            <div className="about-split">
-
-                {/* Image Side */}
-                <div className="about-image-side">
-                    <div className="about-image-wrapper">
-                        <img
-                            src="/assets/images/about/about2.jpeg"
-                            alt="Glass facade building"
-                            className="about-image-main"
-                        />
-
-                        <img
-                            src="/assets/images/about/about2.jpeg"
-                            alt="Aluminium facade structure"
-                            className="about-image-secondary"
-                        />
-                    </div>
-                </div>
-
-                {/* Text Side */}
-                <div className="about-text-side">
-
-                    <p className="about-commitment-text">
-                        The facade and fenestration industry is evolving rapidly—from
-                        energy-efficient glazing systems to fire-safe cladding regulations
-                        and sustainable materials. At MMT Fabricators, we don't just adapt
-                        to change; we lead it. With over 15+ years of hands-on experience
-                        across premium residential towers, commercial developments, and
-                        luxury projects, we transform architectural visions into tangible
-                        landmarks.
-                    </p>
-
-                    <div className="about-principles">
-                        <span className="principle-tag">
-                            Expertise-Driven Execution
-                        </span>
-                        <span className="principle-tag">
-                            Quality Over Speed
-                        </span>
-                        <span className="principle-tag">
-                            Collaborative Partnership
-                        </span>
-                    </div>
-
-                    <div className="about-cta">
-                        <Link to="/about" className="about-button">
-                            MORE ABOUT US →
-                        </Link>
-                    </div>
-                </div>
-            </div>
         </section>
     );
 };
