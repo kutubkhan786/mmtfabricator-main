@@ -3,35 +3,7 @@ import { Link } from "react-router-dom";
 import "./About.css";
 
 const About = () => {
-    const stats = [
-        { number: "2013", label: "Company Founded" },
-        { number: "40+", label: "Skilled Labours" },
-        { number: "50+", label: "Total Staff" },
-        { number: "2015", label: "Trusted Since" }
-    ];
-
-    const capabilities = [
-        {
-            icon: "🏗️",
-            title: "Aluminum Systems",
-            description: "Design and fabrication of all aluminum window series and systems"
-        },
-        {
-            icon: "🔧",
-            title: "Advanced Machinery",
-            description: "Automatic cutting machines & router machines for faster output"
-        },
-        {
-            icon: "📐",
-            title: "Expert Engineering",
-            description: "Qualified engineers for precise designing and detailing"
-        },
-        {
-            icon: "🛠️",
-            title: "Premium Tools",
-            description: "Cordless Hilti drill machines & laser machines for perfect measurements"
-        }
-    ];
+    
 
     return (
         <section className="about-section">

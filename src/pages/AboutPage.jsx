@@ -3,13 +3,7 @@ import { Link } from "react-router-dom";
 import "../components/home/About.css";
 
 const AboutPage = () => {
-    const stats = [
-        { number: "15+", label: "Years of Excellence" },
-        { number: "200+", label: "Projects Completed" },
-        { number: "50+", label: "Happy Clients" },
-        { number: "100+", label: "Team Members" }
-    ];
-
+   
     const capabilities = [
         {
             icon: "🏗️",
