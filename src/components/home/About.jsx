@@ -4,40 +4,37 @@ import "./About.css";
 
 const About = () => {
     const stats = [
-        { number: "15+", label: "Years of Excellence" },
-        { number: "200+", label: "Projects Completed" },
-        { number: "50+", label: "Happy Clients" },
-        { number: "100+", label: "Team Members" }
+        { number: "2013", label: "Company Founded" },
+        { number: "40+", label: "Skilled Labours" },
+        { number: "50+", label: "Total Staff" },
+        { number: "2015", label: "Trusted Since" }
     ];
 
     const capabilities = [
         {
             icon: "🏗️",
-            title: "Facade Engineering",
-            description: "Advanced curtain wall, cladding, and glazing systems"
+            title: "Aluminum Systems",
+            description: "Design and fabrication of all aluminum window series and systems"
         },
         {
             icon: "🔧",
-            title: "Custom Fabrication",
-            description: "Bespoke metal work and architectural elements"
+            title: "Advanced Machinery",
+            description: "Automatic cutting machines & router machines for faster output"
         },
         {
             icon: "📐",
-            title: "Design & Detailing",
-            description: "Comprehensive shop drawings and 3D modeling"
+            title: "Expert Engineering",
+            description: "Qualified engineers for precise designing and detailing"
         },
         {
-            icon: "✅",
-            title: "Installation",
-            description: "Expert on-site installation and project management"
+            icon: "🛠️",
+            title: "Premium Tools",
+            description: "Cordless Hilti drill machines & laser machines for perfect measurements"
         }
     ];
 
     return (
         <section className="about-section">
-
-
-
 
             {/* Main Content - Split Layout with Multiple Images */}
             <div className="about-main">
@@ -54,13 +51,13 @@ const About = () => {
                                         className="gallery-image"
                                     />
                                     <div className="gallery-overlay">
-                                        <span className="gallery-tag">Facade Engineering</span>
+                                        <span className="gallery-tag">Aluminum Glass Railings</span>
                                     </div>
                                 </div>
 
                                 <div className="gallery-item secondary">
                                     <img
-                                        src="/assets/images/about/about1.jpeg"
+                                        src="/assets/images/about/about5.jpeg"
                                         alt="Aluminium composite panel work"
                                         className="gallery-image"
                                     />
@@ -68,12 +65,19 @@ const About = () => {
 
                                 <div className="gallery-item tertiary">
                                     <img
-                                        src="/assets/images/about/about2.jpeg"
+                                        src="/assets/images/about/about3.jpeg"
                                         alt="Structural glazing details"
                                         className="gallery-image"
                                     />
                                 </div>
 
+                                <div className="gallery-item quaternary">
+                                    <img
+                                        src="/assets/images/about/about4.jpeg"
+                                        alt="Metal fabrication workshop"
+                                        className="gallery-image"
+                                    />
+                                </div>
                                 <div className="gallery-item quaternary">
                                     <img
                                         src="/assets/images/about/about1.jpeg"
@@ -88,46 +92,73 @@ const About = () => {
                         <div className="about-text-side">
                             <span className="about-section-label">Who We Are</span>
                             <h2 className="about-section-title">
-                                Crafting Landmarks That <span className="highlight">Define Skylines</span>
+                                MMT FABRICATORS – <span className="highlight">Since 2013</span>
                             </h2>
 
                             <p className="about-text">
-                                The facade and fenestration industry is evolving rapidly—from
-                                energy-efficient glazing systems to fire-safe cladding regulations
-                                and sustainable materials. At MMT Fabricators, we don't just adapt
-                                to change; we lead it.
+                                <strong>MMT FABRICATORS</strong> is a sole proprietorship firm established in 2013,
+                                dedicated to excellence in aluminum fabrication and design. We specialize in
+                                designing and fabricating all types of aluminum window series and systems,
+                                delivering premium quality solutions to our valued clients.
                             </p>
 
                             <p className="about-text">
-                                With over <strong>15+ years</strong> of hands-on experience
-                                across premium residential towers, commercial developments, and
-                                luxury projects, we transform architectural visions into tangible
-                                landmarks. Our team of skilled engineers and fabricators ensures
-                                every detail meets the highest standards of quality and precision.
+                                <strong>Trusted by clients since 2015</strong>, we take pride in our strong
+                                relationships and repeat clientele. Our success is built on a foundation of
+                                skilled workforce and state-of-the-art equipment, including automatic cutting
+                                machines and router machines that ensure faster output without compromising on quality.
                             </p>
+
+                            <div className="about-strength">
+                                <h3>Our Strength</h3>
+                                <div className="strength-grid">
+                                    <div className="strength-item">
+                                        <span className="strength-number">40+</span>
+                                        <span className="strength-label">Skilled Labours at Factory</span>
+                                    </div>
+                                    <div className="strength-item">
+                                        <span className="strength-number">50+</span>
+                                        <span className="strength-label">Staff Members (Office & Site)</span>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div className="about-features">
                                 <div className="feature">
                                     <div className="feature-icon">✓</div>
-                                    <div className="feature-text">ISO 9001:2015 Certified</div>
+                                    <div className="feature-text">Qualified Engineers for Designing</div>
                                 </div>
                                 <div className="feature">
                                     <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Specialized in High-Rise Facades</div>
+                                    <div className="feature-text">Cordless Hilti Drill Machines</div>
                                 </div>
                                 <div className="feature">
                                     <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Sustainable Material Sourcing</div>
+                                    <div className="feature-text">Hilti Laser Machines for Perfect Measurements</div>
                                 </div>
                                 <div className="feature">
                                     <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Advanced 3D Modeling & BIM</div>
+                                    <div className="feature-text">Own Designed & Tested Aluminum Railing System</div>
                                 </div>
+                                <div className="feature">
+                                    <div className="feature-icon">✓</div>
+                                    <div className="feature-text">Skilled & Trusted Sub Contractors</div>
+                                </div>
+                            </div>
+
+                            <div className="about-expertise" style={{marginTop:"5px"}}>
+                                <h3>Special Expertise</h3>
+                                <p className="expertise-text">
+                                    We are experts in <strong>Aluminum Glass Railings</strong> with our own
+                                    designed and tested aluminum railing system, ensuring safety, durability,
+                                    and aesthetic appeal in every installation.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="about-cta-section">
                 <div className="container">
                     <div className="cta-content">
