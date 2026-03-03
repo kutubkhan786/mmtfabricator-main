@@ -67,7 +67,7 @@
 }
 
 .tagline {
-    color: #007bff;
+    color: var(--maroon);
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -80,15 +80,19 @@
 }
 
 .gst-info {
-    background-color: #f0f7ff;
+    background-color: var(--black);
     padding: 0.8rem;
     border-radius: 5px;
-    color: #333;
+    color: var(--white);
     font-size: 1rem;
 }
 
 .gst-info strong {
-    color: #007bff;
+    color: var(--white);
+}
+.gst-info:hover {
+    background-color: var(--maroon);
+   transition-delay: 100ms;
 }
 
 /* Contact Cards */
@@ -98,7 +102,7 @@
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px var(--maroon);
 }
 
 .director {
@@ -113,7 +117,7 @@
 
 .phone-link,
 .email-link {
-    color: #007bff;
+    color: var(--maroon);
     text-decoration: none;
     font-size: 1.1rem;
     display: inline-block;
@@ -122,7 +126,7 @@
 
 .phone-link:hover,
 .email-link:hover {
-    color: #0056b3;
+    color: var(--maroon);
     text-decoration: underline;
 }
 
@@ -137,7 +141,7 @@
 .map-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: var(--black);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -145,7 +149,7 @@
 }
 
 .map-link:hover {
-    background-color: #0056b3;
+    background-color: var(--maroon);
 }
 
 /* Quick Links Section */
