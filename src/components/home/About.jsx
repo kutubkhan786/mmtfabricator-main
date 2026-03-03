@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./About.css";
 
 const About = () => {
-    
+
 
     return (
         <section className="about-section">
@@ -43,29 +43,13 @@ const About = () => {
                                     />
                                 </div>
 
-                                <div className="gallery-item quaternary">
-                                    <img
-                                        src="/assets/images/about/about4.jpeg"
-                                        alt="Metal fabrication workshop"
-                                        className="gallery-image"
-                                    />
-                                </div>
-                                <div className="gallery-item quaternary">
-                                    <img
-                                        src="/assets/images/about/about1.jpeg"
-                                        alt="Metal fabrication workshop"
-                                        className="gallery-image"
-                                    />
-                                </div>
                             </div>
                         </div>
 
                         {/* Text Side */}
                         <div className="about-text-side">
-                            <span className="about-section-label">Who We Are</span>
-                            <h2 className="about-section-title">
-                                MMT FABRICATORS – <span className="highlight">Since 2013</span>
-                            </h2>
+                            <span className="about-section-label" >Who We Are</span>
+
 
                             <p className="about-text">
                                 <strong>MMT FABRICATORS</strong> is a sole proprietorship firm established in 2013,
@@ -95,37 +79,6 @@ const About = () => {
                                 </div>
                             </div>
 
-                            <div className="about-features">
-                                <div className="feature">
-                                    <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Qualified Engineers for Designing</div>
-                                </div>
-                                <div className="feature">
-                                    <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Cordless Hilti Drill Machines</div>
-                                </div>
-                                <div className="feature">
-                                    <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Hilti Laser Machines for Perfect Measurements</div>
-                                </div>
-                                <div className="feature">
-                                    <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Own Designed & Tested Aluminum Railing System</div>
-                                </div>
-                                <div className="feature">
-                                    <div className="feature-icon">✓</div>
-                                    <div className="feature-text">Skilled & Trusted Sub Contractors</div>
-                                </div>
-                            </div>
-
-                            <div className="about-expertise" style={{marginTop:"5px"}}>
-                                <h3>Special Expertise</h3>
-                                <p className="expertise-text">
-                                    We are experts in <strong>Aluminum Glass Railings</strong> with our own
-                                    designed and tested aluminum railing system, ensuring safety, durability,
-                                    and aesthetic appeal in every installation.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,7 +87,7 @@ const About = () => {
             <div className="about-cta-section">
                 <div className="container">
                     <div className="cta-content">
-                        <h2 className="cta-title">Want to know more about MMT FABRICATORS?</h2>
+                        <h2 className="cta-title">Want to know more about<br /> MMT FABRICATORS?</h2>
                         <div className="cta-buttons">
                             <Link to="/about" className="cta-button secondary">
                                 View More About Us →

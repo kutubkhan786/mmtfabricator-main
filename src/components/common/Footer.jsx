@@ -44,7 +44,7 @@ const Footer = () => {
           <p className="footer-tagline">We design · We fabricate · We install</p>
           <p className="footer-description">
             Complete architectural solutions for premium residential and commercial projects.
-            Trusted by India's leading developers since 2010.
+            Trusted by India's leading developers since 2013.
           </p>
           <div className="footer-gst">
             <span className="footer-gst-label">GST:</span>

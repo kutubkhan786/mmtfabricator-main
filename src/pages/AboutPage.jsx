@@ -35,7 +35,7 @@ const AboutPage = () => {
                 <div className="about-hero-overlay"></div>
                 <div className="container">
                     <div className="about-hero-content">
-                        <span className="about-hero-label">Since 2008</span>
+                        <span className="about-hero-label">Since 2013</span>
                         <h1 className="about-hero-title">
                             Engineering <span className="text-gradient">Architectural</span> Excellence
                         </h1>

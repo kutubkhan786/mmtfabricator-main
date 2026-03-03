@@ -23,7 +23,7 @@ const ContactPage = () => {
                                 <p className="tagline">We design · We fabricate · We install</p>
                                 <p className="description">
                                     Complete architectural solutions for premium residential and commercial projects.
-                                    Trusted by India's leading developers since 2010.
+                                    Trusted by India's leading developers since 2013.
                                 </p>
                                 <div className="gst-info">
                                     <strong>GST:</strong> 27AGNPR6682L2ZN
