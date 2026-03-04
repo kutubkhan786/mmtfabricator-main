@@ -183,7 +183,7 @@
 }
 
 .highlight {
-    color: var(--accent-gold, #ffffff);
+    color: var(--accent-gold, #000000);
     position: relative;
     display: inline-block;
 }
@@ -210,7 +210,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-top: 2rem;
+    margin: 2rem 0rem;
 }
 
 .feature {

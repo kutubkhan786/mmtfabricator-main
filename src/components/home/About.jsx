@@ -1,104 +1,94 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./About.css";
+import "./HomeAbout.css";
 
-const About = () => {
-
-
+const HomeAbout = () => {
     return (
-        <section className="about-section">
+        <section className="home-about-section">
 
-            {/* Main Content - Split Layout with Multiple Images */}
-            <div className="about-main">
-                <div className="container">
-                    <div className="about-split">
-
-                        {/* Image Gallery Side */}
-                        <div className="about-gallery-side">
-                            <div className="gallery-grid">
-                                <div className="gallery-item main">
-                                    <img
-                                        src="/assets/images/about/about2.jpeg"
-                                        alt="Modern glass facade installation"
-                                        className="gallery-image"
-                                    />
-                                    <div className="gallery-overlay">
-                                        <span className="gallery-tag">Aluminum Glass Railings</span>
-                                    </div>
-                                </div>
-
-                                <div className="gallery-item secondary">
-                                    <img
-                                        src="/assets/images/about/about5.jpeg"
-                                        alt="Aluminium composite panel work"
-                                        className="gallery-image"
-                                    />
-                                </div>
-
-                                <div className="gallery-item tertiary">
-                                    <img
-                                        src="/assets/images/about/about3.jpeg"
-                                        alt="Structural glazing details"
-                                        className="gallery-image"
-                                    />
-                                </div>
-
-                            </div>
-                        </div>
-
-                        {/* Text Side */}
-                        <div className="about-text-side">
-                            <span className="about-section-label" >Who We Are</span>
+            {/* Header */}
+            <div className="home-about-header">
+                <div className="home-about-logo-wrapper">
+                    <svg width="90" height="90" viewBox="0 0 400 300">
+                        <g
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="12"
+                            strokeLinecap="square"
+                            strokeLinejoin="miter"
+                        >
+                            <line x1="200" y1="60" x2="200" y2="340" />
+                            <path d="M 80,340 V 130 L 200,250 L 320,130 V 340" />
+                            <path d="M 140,340 V 100 L 200,160 L 260,100 V 340" />
+                        </g>
+                    </svg>
+                </div>
 
 
-                            <p className="about-text">
-                                <strong>MMT FABRICATORS</strong> is a sole proprietorship firm established in 2013,
-                                dedicated to excellence in aluminum fabrication and design. We specialize in
-                                designing and fabricating all types of aluminum window series and systems,
-                                delivering premium quality solutions to our valued clients.
-                            </p>
 
-                            <p className="about-text">
-                                <strong>Trusted by clients since 2015</strong>, we take pride in our strong
-                                relationships and repeat clientele. Our success is built on a foundation of
-                                skilled workforce and state-of-the-art equipment, including automatic cutting
-                                machines and router machines that ensure faster output without compromising on quality.
-                            </p>
-
-                            <div className="about-strength">
-                                <h3>Our Strength</h3>
-                                <div className="strength-grid">
-                                    <div className="strength-item">
-                                        <span className="strength-number">40+</span>
-                                        <span className="strength-label">Skilled Labours at Factory</span>
-                                    </div>
-                                    <div className="strength-item">
-                                        <span className="strength-number">50+</span>
-                                        <span className="strength-label">Staff Members (Office & Site)</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                <div className="home-about-title">
+                    Our Commitment to Innovation & Excellence
                 </div>
             </div>
 
-            <div className="about-cta-section">
-                <div className="container">
-                    <div className="cta-content">
-                        <h2 className="cta-title">Want to know more about<br /> MMT FABRICATORS?</h2>
-                        <div className="cta-buttons">
-                            <Link to="/about" className="cta-button secondary">
-                                View More About Us →
-                            </Link>
-                        </div>
+            {/* Split Layout */}
+            <div className="home-about-split">
+
+                {/* Image Side */}
+                <div className="home-about-image-side">
+                    <div className="home-about-image-wrapper">
+                        <img
+                            src="/assets/images/about/about2.jpeg"
+                            alt="Glass facade building"
+                            className="home-about-image-main"
+                        />
+
+                        <img
+                            src="/assets/images/about/about5.jpeg"
+                            alt="Aluminium facade structure"
+                            className="home-about-image-secondary"
+                        />
+                    </div>
+                </div>
+
+                {/* Text Side */}
+                <div className="home-about-text-side">
+
+                    <p>
+                        <strong>Established in 2013</strong>, MMT Fabricators is a
+                        single proprietorship firm specializing in the design and
+                        fabrication of all types of aluminium window systems and
+                        customized solutions.
+                    </p>
+
+                    <p>
+                        <strong>Trusted Since 2015</strong>, we proudly maintain
+                        long-term relationships with repeat clients through quality
+                        workmanship and timely execution.
+                    </p>
+
+                    <p>
+                        <strong>Strong Workforce</strong> – 40 skilled factory
+                        professionals and 50+ staff members including qualified
+                        design engineers working at back office and on-site.
+                    </p>
+
+                    <p>
+                        <strong>Advanced Machinery</strong> – Automatic cutting
+                        machines, router machines, cordless Hilti drills, and
+                        Hilti laser measurement systems for precision and faster output.
+                    </p>
+
+
+                    <div className="home-about-cta">
+                        <Link to="/about" className="home-about-button">
+                            MORE ABOUT US →
+                        </Link>
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };
 
-export default About;
+export default HomeAbout;

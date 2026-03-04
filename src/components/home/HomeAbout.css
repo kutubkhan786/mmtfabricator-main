@@ -1,0 +1,246 @@
+
+/* HEADER */
+.home-about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.home-about-title {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+}
+
+.home-about-subtitle {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gray-light);
+}
+
+/* SPLIT LAYOUT */
+.home-about-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* IMAGE SECTION */
+.home-about-image-side {
+    display: flex;
+    justify-content: center;
+}
+
+.home-about-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.home-about-image-main {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.home-about-image-secondary {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 1px solid var(--border);
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.home-about-image-wrapper:hover .home-about-image-main {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.home-about-image-wrapper:hover .home-about-image-secondary {
+    transform: translateY(10px) scale(1.05);
+    opacity: 1;
+}
+
+/* TEXT */
+.home-about-text-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.home-about-commitment-text {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.home-about-principles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.home-principle-tag {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+    background: rgba(225, 6, 0, 0.08);
+    border: 1px solid rgba(225, 6, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.home-about-button {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: transparent;
+    border: 1px solid var(--red);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    transition: all 0.3s ease;
+}
+
+.home-about-button:hover {
+    background: var(--red);
+}   
+
+
+/* ================================
+   HOME ABOUT SECTION - WHITE THEME
+================================ */
+
+.home-about-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 3rem 2rem 6rem  2rem;
+}
+
+/* Container */
+.home-about-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Title */
+.home-about-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    letter-spacing: -0.02em;
+}
+
+/* Text Wrapper */
+.home-about-text {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #333333;
+}
+
+/* Paragraph spacing */
+.home-about-text p {
+    margin-bottom: 2rem;
+}
+
+/* Bold Titles inside paragraphs */
+.home-about-text strong {
+    display: inline-block;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* CTA Section */
+.home-about-cta {
+    margin-top: 2rem;
+}
+
+/* Button */
+.home-about-button {
+    display: inline-block;
+    padding: 0.95rem 2.2rem;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    transition: all 0.3s ease;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.home-about-button:hover {
+    background-color: var(--maroon);
+    color: #ffffff;
+}
+
+
+/* ================================
+   TABLET RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+
+    .home-about-section {
+        padding: 5rem 1.8rem;
+    }
+
+    .home-about-title {
+        font-size: 2.2rem;
+    }
+
+    .home-about-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .home-about-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .home-about-title {
+        font-size: 1.9rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .home-about-text {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+    .home-about-text p {
+        margin-bottom: 1.5rem;
+    }
+
+    .home-about-button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
