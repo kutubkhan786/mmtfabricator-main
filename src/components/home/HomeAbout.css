@@ -1,4 +1,3 @@
-
 /* HEADER */
 .home-about-header {
     text-align: center;
@@ -121,7 +120,7 @@
 
 .home-about-button:hover {
     background: var(--red);
-}   
+}
 
 
 /* ================================
@@ -131,7 +130,7 @@
 .home-about-section {
     background-color: #ffffff;
     color: #000000;
-    padding: 3rem 2rem 6rem  2rem;
+    padding: 3rem 2rem 6rem 2rem;
 }
 
 /* Container */
@@ -193,13 +192,30 @@
     color: #ffffff;
 }
 
+/* ================================
+   LAPTOP / SMALL DESKTOP
+================================ */
+@media (max-width: 1200px) {
+    .home-about-split {
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    .home-about-image-main {
+        height: 380px;
+    }
+
+    .home-about-image-secondary {
+        height: 260px;
+        bottom: -30px;
+        right: -30px;
+    }
+}
 
 /* ================================
    TABLET RESPONSIVE
 ================================ */
-
 @media (max-width: 992px) {
-
     .home-about-section {
         padding: 5rem 1.8rem;
     }
@@ -211,15 +227,31 @@
     .home-about-text {
         font-size: 0.95rem;
     }
+
+    .home-about-split {
+        gap: 2.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .home-about-image-main {
+        height: 350px;
+    }
+
+    .home-about-image-secondary {
+        height: 240px;
+        bottom: -25px;
+        right: -25px;
+    }
+
+    .home-about-commitment-text {
+        font-size: 0.9rem;
+    }
 }
 
-
 /* ================================
-   MOBILE RESPONSIVE
+   MOBILE LANDSCAPE & SMALL TABLET
 ================================ */
-
 @media (max-width: 768px) {
-
     .home-about-section {
         padding: 4rem 1.5rem;
     }
@@ -242,5 +274,169 @@
         width: 100%;
         text-align: center;
         padding: 1rem;
+    }
+
+    /* Stack split layout vertically */
+    .home-about-split {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0;
+    }
+
+    /* Adjust image positioning */
+    .home-about-image-main {
+        height: 320px;
+    }
+
+    .home-about-image-secondary {
+        height: 220px;
+        bottom: -20px;
+        right: -20px;
+        width: 65%;
+    }
+
+    .home-about-subtitle {
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .home-about-header {
+        margin-bottom: 3rem;
+    }
+}
+
+/* ================================
+   MOBILE PORTRAIT (SMALL PHONES)
+================================ */
+@media (max-width: 576px) {
+    .home-about-section {
+        padding: 3rem 1rem;
+    }
+
+    .home-about-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        line-height: 1.3;
+    }
+
+    .home-about-split {
+        gap: 2.5rem;
+    }
+
+    /* Simplify image stack for very small screens */
+    .home-about-image-wrapper {
+        max-width: 100%;
+    }
+
+    .home-about-image-main {
+        height: 280px;
+        border-radius: 20px;
+    }
+
+    .home-about-image-secondary {
+        height: 180px;
+        bottom: -15px;
+        right: -15px;
+        border-radius: 15px;
+        width: 60%;
+    }
+
+    /* Adjust text for better readability */
+    .home-about-commitment-text {
+        font-size: 0.85rem;
+        line-height: 1.6;
+        text-align: left;
+        /* Better for mobile reading */
+    }
+
+    .home-principle-tag {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .home-about-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* White theme adjustments */
+    .home-about-text {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .home-about-subtitle {
+        font-size: 0.7rem;
+        gap: 0.75rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ================================
+   EXTRA SMALL DEVICES
+================================ */
+@media (max-width: 375px) {
+    .home-about-title {
+        font-size: 1.4rem;
+    }
+
+    .home-about-image-main {
+        height: 240px;
+    }
+
+    .home-about-image-secondary {
+        height: 150px;
+        bottom: -12px;
+        right: -12px;
+    }
+
+    .home-about-principles {
+        gap: 0.5rem;
+    }
+
+    .home-principle-tag {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.6rem;
+    }
+}
+
+/* ================================
+   TOUCH DEVICE OPTIMIZATIONS
+================================ */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Disable hover effects on touch devices */
+    .home-about-image-wrapper:hover .home-about-image-main,
+    .home-about-image-wrapper:hover .home-about-image-secondary {
+        transform: none;
+    }
+
+    /* Make buttons easier to tap */
+    .home-about-button {
+        min-height: 44px;
+        /* Apple's recommended minimum touch target */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* ================================
+   HIGH RESOLUTION MOBILE
+================================ */
+@media (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
+    .home-about-split {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .home-about-image-main {
+        height: 300px;
+    }
+
+    .home-about-image-secondary {
+        height: 200px;
     }
 }
