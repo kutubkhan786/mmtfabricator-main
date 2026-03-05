@@ -61,8 +61,8 @@ const Services = () => {
                         </div>
                     ))}
                 </div>
-                <div className="about-cta" style={{ display: "flex", justifyContent: "center" }}>
-                    <Link to="/services" className="about-button">
+                <div className="home-services-cta" style={{ display: "flex", justifyContent: "center" }}>
+                    <Link to="/services" className="home-services-button">
                         Explore Services →
                     </Link>
                 </div>
